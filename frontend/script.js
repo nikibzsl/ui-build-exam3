@@ -13,13 +13,19 @@ const cardsComponent = function () {
 
     for (company of companies.cards) {
         html+= `
+        <div class="main-container">
          <div class="cards-container">
             <div class="cards-inner">
-                <h1>${company.title}</h1>
-                <p>${company.text}</p>
-                <p>${company.sub}</p>
+                 <p class="sub">${company.sub}</p>
+                <h1 class="title">${company.title}</h1>
+                <p class="text">${company.text}</p>
              </div>
+            <button class="visit">${companies.button}</button>
+            <span class="material-symbols-outlined" id="arrow">
+            arrow_forward
+            </span>
             </div>
+        </div>
         `
     }
 return html
