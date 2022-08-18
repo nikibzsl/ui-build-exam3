@@ -18,13 +18,14 @@ const cardsComponent = function () {
             <div class="cards-inner">
                  <p class="sub">${company.sub}</p>
                 <h1 class="title">${company.title}</h1>
-                <p class="text">${company.text}</p>
              </div>
+             <p class="text">${company.text}</p>
+            </div>
+            
             <button class="visit">${companies.button}</button>
             <span class="material-symbols-outlined" id="arrow">
             arrow_forward
             </span>
-            </div>
         </div>
         `
     }
